@@ -8,6 +8,7 @@ import AuthLayout from "../layouts/auth";
 // config
 import { DEFAULT_PATH } from "../config";
 import LoadingScreen from "../components/LoadingScreen";
+import Contact from "../sections/Dashboard/Contact";
 
 const Loadable = (Component) => (props) => {
   return (
@@ -63,7 +64,7 @@ const Conversation = Loadable(
 const Chats = Loadable(lazy(() => import("../pages/dashboard/Chats")));
 const Group = Loadable(lazy(() => import("../pages/dashboard/Group")));
 const CallPage = Loadable(lazy(() => import("../pages/dashboard/Call")));
-const Contact = Loadable(lazy(() => import("../sections/dashboard/Contact")));
+//const Contact = Loadable(lazy(() => import("../sections/dashboard/Contact")));
 const Page404 = Loadable(lazy(() => import("../pages/Page404")));
 
 const LoginPage = Loadable(lazy(() => import("../pages/auth/Login")));

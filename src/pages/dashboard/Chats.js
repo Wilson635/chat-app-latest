@@ -17,17 +17,17 @@ import { SimpleBarStyle } from "../../components/Scrollbar";
 import { useTheme } from "@mui/material/styles";
 import useResponsive from "../../hooks/useResponsive";
 import BottomNav from "../../layouts/dashboard/BottomNav";
-import { ChatList } from "../../data";
+//import { ChatList } from "../../data";
 import ChatElement from "../../components/ChatElement";
 import {
   Search,
   SearchIconWrapper,
   StyledInputBase,
 } from "../../components/Search";
-import Friends from "../../sections/dashboard/Friends";
 import { socket } from "../../socket";
 import { useDispatch, useSelector } from "react-redux";
 import { FetchDirectConversations } from "../../redux/slices/conversation";
+import Friends from "../../sections/Dashboard/Friends";
 
 const user_id = window.localStorage.getItem("user_id");
 

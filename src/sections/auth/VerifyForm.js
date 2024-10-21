@@ -1,13 +1,13 @@
-import { useState } from "react";
+//import { useState } from "react";
 import * as Yup from "yup";
 // form
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 // @mui
-import { Stack, IconButton, InputAdornment, Button } from "@mui/material";
+import { Stack, Button } from "@mui/material";
 // components
-import FormProvider, { RHFTextField } from "../../components/hook-form";
-import { Eye, EyeSlash } from "phosphor-react";
+import FormProvider from "../../components/hook-form";
+//import { Eye, EyeSlash } from "phosphor-react";
 import RHFCodes from "../../components/hook-form/RHFCodes";
 import { useDispatch, useSelector } from "react-redux";
 import { VerifyEmail } from "../../redux/slices/auth";

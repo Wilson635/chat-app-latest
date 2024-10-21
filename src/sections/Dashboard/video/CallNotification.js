@@ -1,4 +1,4 @@
-import { faker } from "@faker-js/faker";
+//import { faker } from "@faker-js/faker";
 import {
   Avatar,
   Button,
@@ -21,7 +21,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-const CallNotification = ({ open, handleClose }) => {
+const VideoCallNotification = ({ open, handleClose }) => {
   const dispatch = useDispatch();
   const { user } = useSelector((state) => state.app);
   const [call_details] = useSelector((state) => state.videoCall.call_queue);
@@ -76,4 +76,4 @@ const CallNotification = ({ open, handleClose }) => {
   );
 };
 
-export default CallNotification;
+export default VideoCallNotification;

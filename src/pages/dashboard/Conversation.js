@@ -5,21 +5,22 @@ import { SimpleBarStyle } from "../../components/Scrollbar";
 
 import { ChatHeader, ChatFooter } from "../../components/Chat";
 import useResponsive from "../../hooks/useResponsive";
-import { Chat_History } from "../../data";
-import {
+//import { Chat_History } from "../../data";
+/*import {
   DocMsg,
   LinkMsg,
   MediaMsg,
   ReplyMsg,
   TextMsg,
   Timeline,
-} from "../../sections/dashboard/Conversation";
+} from "../../sections/dashboard/Conversation";*/
 import { useDispatch, useSelector } from "react-redux";
 import {
   FetchCurrentMessages,
   SetCurrentConversation,
 } from "../../redux/slices/conversation";
 import { socket } from "../../socket";
+import {DocMsg, LinkMsg, MediaMsg, ReplyMsg, TextMsg, Timeline} from "../../sections/Dashboard/Conversation";
 
 const Conversation = ({ isMobile, menu }) => {
   const dispatch = useDispatch();

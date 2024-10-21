@@ -17,7 +17,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-const CallDialog = ({ open, handleClose }) => {
+const VideoCallDialog = ({ open, handleClose }) => {
   const dispatch = useDispatch();
 
   const audioStreamRef = useRef(null);
@@ -361,4 +361,4 @@ const CallDialog = ({ open, handleClose }) => {
   );
 };
 
-export default CallDialog;
+export default VideoCallDialog;

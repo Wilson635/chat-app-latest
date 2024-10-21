@@ -1,8 +1,8 @@
-import { Link as RouterLink } from "react-router-dom";
+//import { Link as RouterLink } from "react-router-dom";
 // sections
-import { Stack, Typography, Link } from "@mui/material";
-import AuthSocial from "../../sections/auth/AuthSocial";
-import Login from "../../sections/auth/LoginForm";
+import { Stack, Typography } from "@mui/material";
+//import AuthSocial from "../../sections/auth/AuthSocial";
+//import Login from "../../sections/auth/LoginForm";
 import VerifyForm from "../../sections/auth/VerifyForm";
 
 // ----------------------------------------------------------------------

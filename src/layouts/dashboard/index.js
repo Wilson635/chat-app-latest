@@ -11,15 +11,15 @@ import {
   AddDirectConversation,
   AddDirectMessage,
 } from "../../redux/slices/conversation";
-import AudioCallNotification from "../../sections/dashboard/Audio/CallNotification";
-import VideoCallNotification from "../../sections/dashboard/video/CallNotification";
 import {
   PushToAudioCallQueue,
   UpdateAudioCallDialog,
 } from "../../redux/slices/audioCall";
-import AudioCallDialog from "../../sections/dashboard/Audio/CallDialog";
-import VideoCallDialog from "../../sections/dashboard/video/CallDialog";
 import { PushToVideoCallQueue, UpdateVideoCallDialog } from "../../redux/slices/videoCall";
+import AudioCallNotification from "../../sections/Dashboard/Audio/CallNotification";
+import VideoCallNotification from "../../sections/Dashboard/video/CallNotification";
+import AudioCallDialog from "../../sections/Dashboard/Audio/CallDialog";
+import VideoCallDialog from "../../sections/Dashboard/video/CallDialog";
 
 const DashboardLayout = () => {
   const isDesktop = useResponsive("up", "md");
@@ -49,7 +49,7 @@ const DashboardLayout = () => {
   };
 
   useEffect(() => {
-    if (isLoggedIn) {
+    if (!isLoggedIn) {
       window.onload = function () {
         if (!window.location.hash) {
           window.location = window.location + "#loaded";
@@ -139,11 +139,11 @@ const DashboardLayout = () => {
       socket?.off("new_message");
       socket?.off("audio_call_notification");
     };
-  }, [isLoggedIn, socket]);
+  }, [!isLoggedIn, socket]);
 
-  if (!isLoggedIn) {
+  /*if (!isLoggedIn) {
     return <Navigate to={"/auth/login"} />;
-  }
+  }*/
 
   return (
     <>

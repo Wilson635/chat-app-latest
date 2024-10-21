@@ -17,9 +17,9 @@ import {
 import { useTheme } from "@mui/material/styles";
 import { SimpleBarStyle } from "../../components/Scrollbar";
 import { CallLogElement } from "../../components/CallElement";
-import StartCall from "../../sections/dashboard/StartCall";
 import { useDispatch, useSelector } from "react-redux";
 import { FetchCallLogs } from "../../redux/slices/app";
+import StartCall from "../../sections/Dashboard/StartCall";
 
 const Call = () => {
   const dispatch = useDispatch();

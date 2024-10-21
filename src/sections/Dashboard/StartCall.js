@@ -6,12 +6,12 @@ import {
   Slide,
   Stack,
 } from "@mui/material";
-import {
+/*import {
   Search,
   SearchIconWrapper,
   StyledInputBase,
 } from "../../components/Search";
-import { MagnifyingGlass } from "phosphor-react";
+import { MagnifyingGlass } from "phosphor-react";*/
 import { CallElement } from "../../components/CallElement";
 import { CallList } from "../../data";
 import { useDispatch, useSelector } from "react-redux";

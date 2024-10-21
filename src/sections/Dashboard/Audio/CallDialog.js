@@ -9,7 +9,7 @@ import {
   Stack,
 } from "@mui/material";
 
-import { faker } from "@faker-js/faker";
+//import { faker } from "@faker-js/faker";
 
 import { ZegoExpressEngine } from "zego-express-engine-webrtc";
 import { useDispatch, useSelector } from "react-redux";
@@ -24,7 +24,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-const CallDialog = ({ open, handleClose }) => {
+const AudioCallDialog = ({ open, handleClose }) => {
   const dispatch = useDispatch();
   const { user } = useSelector((state) => state.app);
   const audioStreamRef = useRef(null);
@@ -339,4 +339,4 @@ const CallDialog = ({ open, handleClose }) => {
   );
 };
 
-export default CallDialog;
+export default AudioCallDialog;
