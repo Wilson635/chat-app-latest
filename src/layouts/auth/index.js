@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 const AuthLayout = () => {
   const { isLoggedIn } = useSelector((state) => state.auth);
 
-  if (isLoggedIn) {
+  if (!isLoggedIn) {
     return <Navigate to={"/app"} />;
   }
 
