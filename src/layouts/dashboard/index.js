@@ -49,7 +49,7 @@ const DashboardLayout = () => {
   };
 
   useEffect(() => {
-    if (!isLoggedIn) {
+    if (isLoggedIn) {
       window.onload = function () {
         if (!window.location.hash) {
           window.location = window.location + "#loaded";
@@ -141,9 +141,9 @@ const DashboardLayout = () => {
     };
   }, [!isLoggedIn, socket]);
 
-  /*if (!isLoggedIn) {
+  if (!isLoggedIn) {
     return <Navigate to={"/auth/login"} />;
-  }*/
+  }
 
   return (
     <>
